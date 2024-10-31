@@ -1,0 +1,43 @@
+<FONT face "Arial,Heveltica,sans-serif,Arial Black" size=2>
+<html>
+<FONT face "Verdana,Arial, Heveltica,sans-serif" size=1>
+<head>
+<script language="javascript">
+function test1(form){
+if(form.text.value==""){
+alert("coloque o um informação");}
+else{alert("ola"+form.text1.value+"informação do foirmulario ok"}
+}
+function test2(form){
+if(form.text2.value=="" ||  form.text2.Indexof='@',0)==-1){
+alert("seu e-mail deve ter o @")}
+else{
+alert(olha so que legal +form.text1.value+"vou lhe mandar um email em"+form.text2.value+"); ,.}
+}
+function test3(form){
+if(form.text3.value=="4"){
+alert("correto"+form.text1.value+");
+}
+else{ alert("oh que pena voce errou");}
+
+}
+</script>
+</head>
+<body>
+
+<font face="Arial, Heveltica,sans-serif,Arial Black"><br>
+utilize o formulario abaixo para verificar respostas </font>
+<form name="first">
+<p> escreva o nome abaixo</p>
+<input type="text "name="text1">
+<input type="button" name="button1" value="teste  a informação"onclick="test1(this.form)"><p>
+<p> escreva o seu email</p>
+<input type="text" name="text2">
+<input type="button" name="button2" value="teste  a informação"onclick="test2(this.form)"><p>
+<p> quanto é 2+2</p>
+<input type="text" name="text3">
+<input type=button" name="button3" value="teste  a informação"onclick="test3(this.form)")><p>
+</form>
+
+</body>
+</html>
