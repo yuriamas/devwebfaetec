@@ -1,0 +1,71 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Diplomata&display=swap');
+
+
+#container {
+  background-color :#800000;
+  width: 80%;
+  aspect-ratio: 3/2;
+  padding: 0 40px;
+  margin: auto;
+  border: solid black 2px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  scroll-snap-type: x mandatory; /*indica que o scroll horizontal deve "pular e grudar" no elemento mais próximo, sempre que o scroll for movido um pouco*/
+  scroll-padding-inline: 10px;
+back
+}
+
+ p{ color:white; 
+font-weight:bold;
+}
+
+img  {
+align: center;
+
+height: 50%;
+width:50%;
+
+}
+.blue {
+  background-color: black;
+  height: 80%;
+  aspect-ratio: 5/4;
+}
+
+.green {
+  background-color: lightgreen;
+  height: 80%;
+  aspect-ratio: 5/4;
+}
+body{background-color :#800000;}
+.blue, .green {
+  display: inline-block;
+  margin: 10px;
+  scroll-snap-align: none start;
+}
+</style>
+</head>
+<body>
+
+<h3>CARDAPIO</h3>
+
+<div id="container">
+  <div class="blue">  <p> mount cheese</p><img src="ham1.png"></div>
+  <div class="green"><p> mount double</p><img src="ham2.png"></div>
+  <div class="blue"><p> mount chedar</p><img src="ham3.png"></div>
+  <div class="green"><p> mount cheese</p><img src="ham4.png"></div>
+  <div class="blue"><img src="ham5.png"></div>
+  <div class="green"><img src="ham6.png"></div>
+  <div class="blue"><img src="ham7.png"></div>
+</div>
+
+</body>
+</html>
